@@ -1,4 +1,4 @@
-package com.example.demo.DesignPattern.creation.abstractFactory;
+package com.example.demo.DesignPattern.GOFJava.abstractFactory.example1;
 
 /**
  * @author Geonguk Han

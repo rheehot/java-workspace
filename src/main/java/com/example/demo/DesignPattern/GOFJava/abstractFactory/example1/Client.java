@@ -1,7 +1,7 @@
-package com.example.demo.DesignPattern.creation.abstractFactory;
+package com.example.demo.DesignPattern.GOFJava.abstractFactory.example1;
 
-import com.example.demo.DesignPattern.creation.abstractFactory.solution.ElevatorFactory;
-import com.example.demo.DesignPattern.creation.abstractFactory.solution.LGElevatorFactory;
+import com.example.demo.DesignPattern.GOFJava.abstractFactory.example1.solution.ElevatorFactory;
+import com.example.demo.DesignPattern.GOFJava.abstractFactory.example1.solution.LGElevatorFactory;
 
 /**
  * @author Geonguk Han

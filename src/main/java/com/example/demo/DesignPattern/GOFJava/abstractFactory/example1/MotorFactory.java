@@ -1,9 +1,4 @@
-package com.example.demo.DesignPattern.creation.abstractFactory.old;
-
-import com.example.demo.DesignPattern.creation.abstractFactory.HyundaiMotor;
-import com.example.demo.DesignPattern.creation.abstractFactory.LGMotor;
-import com.example.demo.DesignPattern.creation.abstractFactory.Motor;
-import com.example.demo.DesignPattern.creation.abstractFactory.VendorID;
+package com.example.demo.DesignPattern.GOFJava.abstractFactory.example1;
 
 /**
  * @author Geonguk Han
