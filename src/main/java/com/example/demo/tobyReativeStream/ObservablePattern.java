@@ -16,6 +16,11 @@ import java.util.concurrent.Executors;
  * Iterator - pull (iter.hasNext())
  * Observable - push (notifyObservers)
  *
+ *
+ *
+ * 문제점 1. complete 완료된거를 확인할 길이없다.
+ * 문제점 2. error 처리
+ *
  */
 public class ObservablePattern {
 
