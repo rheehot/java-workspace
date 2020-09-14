@@ -18,17 +18,14 @@ public class PubSub {
 
         // publisher
         Publisher<Integer> publisher = new Publisher<Integer>() {
-
             Iterator<Integer> it = iter.iterator();
 
             @Override
             public void subscribe(Subscriber<? super Integer> subscriber) {
-
                 subscriber.onSubscribe(new Subscription() {
-
-                    // backPressure
                     @Override
                     public void request(long l) {
+                        // backPressure
                         while (l-- > 0) {
                             if (it.hasNext()) {
                                 subscriber.onNext(it.next());
@@ -37,8 +34,6 @@ public class PubSub {
                                 break;
                             }
                         }
-
-
                     }
 
                     @Override
@@ -71,22 +66,16 @@ public class PubSub {
 
             }
 
-            // optional
             @Override
             public void onError(Throwable throwable) {
                 System.out.println("onError : " + throwable);
             }
 
-            // optional
             @Override
             public void onComplete() {
                 System.out.println("onComplete");
             }
         };
-
-
         publisher.subscribe(subscriber);
-
-
     }
 }
