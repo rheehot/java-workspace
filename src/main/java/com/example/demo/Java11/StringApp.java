@@ -7,7 +7,7 @@ package com.example.demo.Java11;
 public class StringApp {
     public static void main(String[] args) {
 
-        var name = "andrew";
-        System.out.println(name);
+//        var name = "andrew";
+//        System.out.println(name);
     }
 }
