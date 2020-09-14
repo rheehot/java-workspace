@@ -17,7 +17,7 @@ import java.util.concurrent.Executors;
  * Observable - push (notifyObservers)
  *
  */
-public class Test {
+public class ObservablePattern {
 
     // publisher, source
     static class IntObservable extends Observable implements Runnable{
