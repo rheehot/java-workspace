@@ -7,10 +7,10 @@ import org.reactivestreams.Subscription;
  * @author Geonguk Han
  * @since 2020-09-15
  */
-public class DelegateSubscriber implements Subscriber<Integer> {
+public class DelegateSubscriber<T> implements Subscriber<T> {
     Subscriber subscriber;
 
-    public DelegateSubscriber(Subscriber subscriber) {
+    public DelegateSubscriber(Subscriber<? super T> subscriber) {
         this.subscriber = subscriber;
     }
 
@@ -20,7 +20,7 @@ public class DelegateSubscriber implements Subscriber<Integer> {
     }
 
     @Override
-    public void onNext(Integer integer) {
+    public void onNext(T integer) {
         subscriber.onNext(integer);
     }
 
