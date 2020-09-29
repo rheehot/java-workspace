@@ -16,19 +16,19 @@ import java.util.concurrent.Callable;
 public class MyController {
 
     @GetMapping("/callable")
-//    public Callable<String> callable() {
-//        log.info("callable");
-//        // 새로운 스레드에서 실행됨
-//        return () -> {
-//            log.info("async");
-//            Thread.sleep(2000);
-//            return "hello";
-//        };
-//    }
-
-    public String callable() throws InterruptedException {
+    public Callable<String> callable() {
         log.info("callable");
-        Thread.sleep(2000);
-        return "hello";
+        // 새로운 스레드에서 실행됨
+        return () -> {
+            log.info("async");
+            Thread.sleep(2000);
+            return "hello";
+        };
     }
+
+//    public String callable() throws InterruptedException {
+//        log.info("callable");
+//        Thread.sleep(2000);
+//        return "hello";
+//    }
 }
